@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Evita que padding o border sumen al tamaño total */
+}
+  
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("../multimedia/fondo-web.svg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F5F3F3;
+    line-height: 2em;
+    background-attachment: fixed;
+}
+
+.contenedor-principal {
+    width: 100%; /* mobile first */
+    max-width: 1200px; /* límite máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 5%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Efecto vidrio borroso */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-principal > * {
+    max-width: 100%; /* Evita que los hijos crezcan más del contenedor */
+}
+
+header {
+    height: 35vh; /* Un 40% de la altura de la pantalla */
+    margin-bottom: 5%;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 8%;
+    padding-top: 2%;
+    line-height: 1.2em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 8%;
+    line-height: 1.2em;
+    padding-top: 5%;
+}
+
+h3 {
+    font-size: 1.8em;
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+
+p {
+    font-size: 1.5em;
+    padding-bottom: 10%;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+button {
+    padding: 5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #F5F3F3;
+    background-color: rgb(26, 167, 189);
+    font-size: 1.2em;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(15, 139, 158);
+}
+
+button:active {
+    background-color: rgb(11, 106, 120);
+}
+
+.imagen-presentacion {
+    position: relative;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.direccion-presentacion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5%;
+    color: #F5F3F3;
+    background-color: black;
+    box-sizing: border-box;
+}
+.presentacion img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.texto-presentacion {
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
+.contenedor-imagenes {
+    margin-top: 3%;
+    display: flex;
+    gap: 10px; /* Espacio entre imágenes */
+    width: 100%;
+    
+}
+
+.contenedor-imagenes img {
+    flex: 1;         /* Permite que cada imagen crezca para ocupar el espacio disponible */
+    object-fit: cover;
+    height: auto !important;    /* O el valor que convenga para que tengan la misma altura */
+    aspect-ratio: 4 / 3;  /* se ajusta con la proporcion de ancho de la imagen */
+
+}
+
+.contenedor-imagen {
+    /*position: relative;*/
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    /*padding-top: 7%;*/
+}
+
+/* La imagen se posiciona para cubrir todo el contenedor */
+.contenedor-imagen img {
+  /*  position: absolute;*/
+    height: 200px;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.contenedor-imagenes img:hover {
+    filter: brightness(0.8);
+    transform: scale(0.95);
+
+}
+
+.contenedor-imagenes img:active {
+    filter: brightness(0.7);
+}
+
+.ventana-emergente {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px); /* Aplicar desenfoque */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.contenedor-imagen-grande {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-grande {
+   width: 80%;
+   height: 80%;
+}
+
+.flecha-izquierda,
+.flecha-derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+    color: #F5F3F3;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.flecha-izquierda {
+    left: 5%;
+}
+
+.flecha-derecha {
+    right: 5%;
+}
+
+.flecha-izquierda:hover,
+.flecha-derecha:hover {
+    color: #ccc;
+    background: none !important;
+}
+
+.flecha-izquierda:active,
+.flecha-derecha:active {
+    color: #878787;
+    transform: translateY(-50%) scale(0.95);
+    background: none !important;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+   color: #ccc;
+   background: none !important;
+}
+
+.cerrar:active {
+    color: #878787;
+    transform: scale(0.95);
+    background: none !important;
+}
+
+#carouselContent {
+    display: flex;
+    flex-wrap: nowrap;  /* Los videos quedan en una sola fila */
+    gap: 2%;          /* Espacio entre cada video */
+    overflow-x: auto;   /* Si hay más videos de los que entran en el ancho, se activa el scroll horizontal */
+    
+}
+
+.carousel-container {
+    width: 80%;      /* O un ancho fijo, por ejemplo, 800px */
+    margin: 0 auto;  /* Centra el contenedor */
+    position: relative; /* Para que las flechas se posicionen respecto a él */
+}
+
+.video:hover {
+    transform: scale(0.98); /* Reduce ligeramente el tamaño al presionar */
+    filter: brightness(0.7); /* Oscurece un poco más */
+}
+
+.video:active {
+    filter: brightness(0.9); /* Oscurece un poco más */
+}
+  
+.carousel-btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: none !important;
+    box-shadow: none;
+    border: none !important;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.carousel-btn:hover {
+    color: #cfcfcf;
+}
+ 
+.carousel-btn:active {
+    transform: translateY(-48%);    
+    color: #afafaf;
+}
+
+.carousel-btn.prev { /* Botón izquierdo */
+    right: 100%;
+}
+  
+.carousel-btn.next { /* Botón derecho */
+    left: 100%;
+}
+
+#consulta-form input{
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+#consulta-form {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.enviar {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 10%
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.footer img {
+    width: 3em;
+    height: 3em;
+}
+
+.footer h2 {
+    padding-bottom: 5% !important;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-item a {
+    color: #F5F3F3;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.social-item a:hover {
+    color: #25D366;
+}
+
+@media screen and (min-width: 1024px) {
+    .contenedor-principal {
+        max-width: 1400px;
+        padding-left: 18%; /* Ajusta el margen en desktop */
+        padding-right: 18%; /* Ajusta el margen en desktop */
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    header {
+        height: 90vh; /* Un 40% de la altura de la pantalla */
+    }
+
+  .presentacion {
+    display: flex;
+    /*align-items: center;*/
+    gap: 5%;
+    
+  }
+
+  .presentacion h1 {
+    font-size: 2.4em;
+    text-align: left;
+  }
+
+  .presentacion img {
+    width: 100%;
+    min-width: 37vh; /* Ajusta según el tamaño deseado */
+    max-height: 100vh; /* Ajusta según el tamaño deseado */
+    object-fit: cover;
+  }
+
+    .imagen-presentacion {
+        width: 50%;
+    }
+
+    .presentacion h3 {
+        font-size: 1.8em;
+    }
+
+    .producto {
+        display: flex;
+        align-items: flex-start; /*los elementos inician con la misma altura */
+        gap: 20px;
+        padding-top: 10%;
+    }
+
+    .contenedor-imagenes {
+        margin: 0px !important;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        gap: 10px;
+    }
+
+    .contenedor-imagenes img {
+        border-radius: 5px;
+    }
+
+    h3 {
+        padding-top: 0px !important;
+    }
+
+    .titulo-productos {
+        padding: 0px !important;
+    }
+
+    .contenedor-imagen img {
+        height: 220px !important;
+        width: 100% !important;
+    }
+
+    .contenedor-imagen {
+        height: 220px !important;
+        min-width: 300px !important;
+        overflow: hidden;
+    }
+
+    .producto:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+
+    .ventana-emergente {
+        backdrop-filter: blur(15px);
+    }
+
+    .contenedor-imagen-grande {
+        width: 60%;
+    }
+
+    .imagen-grande {
+        width: 90%;
+        height: 600px;
+    }
+
+    .cerrar {
+        top: 0px !important;
+    }
+
+    .flecha-izquierda {
+        font-size: 4em;
+        left: 11%;
+    }
+
+    .flecha-derecha {
+        font-size: 4em;
+        right: 11%;
+    }
+
+    .carousel-container {
+        width: 100%;
+    }
+
+    .carousel-btn {
+        font-size: 3.5em;
+    }
+
+    #consulta-form {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .footer img {
+        width: 4em;
+        height: 4em;
+    }
+
+    .footer h2 {
+        padding-top: 0px;
+    }
+
+    .social-item a {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .contenedor-imagen {
+        height: 450px;
+    }
+}
