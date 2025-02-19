@@ -113,7 +113,7 @@ button:active {
     width: 100%;
     padding: 5%;
     color: #F5F3F3;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: black;
     box-sizing: border-box;
     text-decoration: none;
     border-radius: 0 0 10px 10px;
