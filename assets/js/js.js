@@ -1,7 +1,7 @@
         const productos = {
             producto1: {
                 titulo: "Motores",
-                descripcion: "Ofrecemos todo tipo de motores que se adaptan para el óptimo funcionamiento de cada Cortina Metálica. Motores Trasversales, tubulares, Vivaldi, etc.",
+                descripcion: "En Cortinas Metálicas Ferreyra ofrecemos una amplia variedad de motores diseñados para el óptimo funcionamiento de cada cortina metálica, incluyendo motores transversales, tubulares, Vivaldi, entre otros.",
                 imagenes: [
                     "assets/multimedia/motor-1.webp",
                     "assets/multimedia/motor-2.jpg",
@@ -14,7 +14,7 @@
             },
             producto2: {
                 titulo: "Repuestos",
-                descripcion: "En Cortinas Metálicas Ya ofrecemos una gran variedad de materiales y repuestos para la instalación y reparación de Cortinas Metálicas.",
+                descripcion: "En Cortinas Metálicas Ferreyra, ofrecemos una gran variedad de materiales y repuestos para la instalación y reparación de Cortinas Metálicas.",
                 imagenes: [
                     "assets/multimedia/repuesto-1.jpg",
                     "assets/multimedia/repuesto-2.jpg",
@@ -29,7 +29,7 @@
             },
             producto3: {
                 titulo: "Portones automatizados",
-                descripcion: "En Cortinas Metálicas ya tenemos materiales de alta calidad para la instalación y mantenimiento de tu portón automatizado.",
+                descripcion: "En Cortinas Metálicas Ferreyra, tenemos materiales de alta calidad para la instalación y mantenimiento de tu portón automatizado.",
                 imagenes: [
                     "assets/multimedia/porton-1.jpg",
                     "assets/multimedia/porton-2.jpg",
