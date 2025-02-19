@@ -326,7 +326,7 @@ document.getElementById("consulta-form").addEventListener("submit", function (ev
     );
 
     // nro de WhatsApp
-    const numeroWhatsApp = "+54 9 1126811283";
+    const numeroWhatsApp = "5491126811283";
 
     // enlace para enviar el mensaje a través de wsp
     const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;

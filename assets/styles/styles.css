@@ -113,9 +113,28 @@ button:active {
     width: 100%;
     padding: 5%;
     color: #F5F3F3;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
     box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+    font-size: 1em;
 }
+
+.ver-mapa {
+    display: block; /* Hace que "Ver mapa" aparezca en la linea de abajo */
+    font-weight: bold; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}  
+
+.ver-mapa:hover {
+    color: #dadada;
+}
+
+.ver-mapa:active {
+    color: #c6c6c6;
+}
+
 .presentacion img {
     width: 100%;
     border-radius: 10px;
