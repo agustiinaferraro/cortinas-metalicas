@@ -40,60 +40,29 @@
             }
         };
 
-
         const videos = [
-          {
-            url: "https://www.youtube.com/embed/GSmgFN0Wgv0"
-          },
-          {
-            url: "https://www.youtube.com/embed/_t8gywa7fsQ"
-          },
-          {
-            url: "https://www.youtube.com/embed/HwExpvchyqY"
-          },
-          {
-            url: "https://www.youtube.com/embed/IXiWdpv0tns"
-          },
-          {
-            url: "https://www.youtube.com/embed/weUgYwFFvUo"
-          },
-          {
-            url: "https://www.youtube.com/embed/qXPcsk4glE0"
-          },
-          {
-            url: "https://www.youtube.com/embed/74THwcPOdK4"
-          },
-          {
-            url: "https://www.youtube.com/embed/AWWpk4Kp0z4"
-          },
-          {
-            url: "https://www.youtube.com/embed/wW5FJcLG944"
-          },
-          {
-            url: "https://www.youtube.com/embed/Pv8WjJXnQMY"
-          },
-          {
-            url: "https://www.youtube.com/embed/U8AQ5shL5c8"
-          },
-          {
-            url: "https://www.youtube.com/embed/lsODo-LigKY"
-          },
-          {
-            url: "https://www.youtube.com/embed/RsqYNoQB9yI"
-          },
-          {
-            url: "https://www.youtube.com/embed/FAp-Lkiv2Fg"
-          },
-          {
-            url: "https://www.youtube.com/embed/4iMqqpwVHJQ"
-          },
-          {
-            url: "https://www.youtube.com/embed/y4FxtryYE1E"
-          },
-          {
-            url: "https://www.youtube.com/embed/Vt0AKNguaMU"
-          }
+            { url: "https://www.youtube.com/embed/GSmgFN0Wgv0" }, //1
+            { url: "https://www.youtube.com/embed/_t8gywa7fsQ" }, //2
+            { url: "https://www.youtube.com/embed/HwExpvchyqY" }, //3
+            { url: "https://www.youtube.com/embed/IXiWdpv0tns" }, //4
+            { url: "https://www.youtube.com/embed/weUgYwFFvUo" }, //5
+            { url: "https://www.youtube.com/embed/qXPcsk4glE0" }, //6
+            { url: "https://www.youtube.com/embed/74THwcPOdK4" }, //7
+            { url: "https://www.youtube.com/embed/AWWpk4Kp0z4" }, //8
+            { url: "https://www.youtube.com/embed/wW5FJcLG944" }, //9
+            { url: "https://www.youtube.com/embed/Pv8WjJXnQMY" }, //10
+            { url: "https://www.youtube.com/embed/lsODo-LigKY" }, //11 (Corregido)
+            { url: "https://www.youtube.com/embed/RsqYNoQB9yI" }, //12
+            { url: "https://www.youtube.com/embed/FAp-Lkiv2Fg" }, //13
+            { url: "https://www.youtube.com/embed/4iMqqpwVHJQ" }, //14
+            { url: "https://www.youtube.com/embed/y4FxtryYE1E" }, //15
+            { url: "https://www.youtube.com/embed/Vt0AKNguaMU" }, //16
+            { url: "https://www.youtube.com/embed/cv7gm1AdA-g" }, //17 (Short corregido)
+            { url: "https://www.youtube.com/embed/GVnENzx4Mkk" }  //18 (Short corregido)
+            // { url: "https://www.youtube.com/embed/U8AQ5shL5c8" } //19 (Si vuelve a estar disponible)
         ];
+        
+          
         
           
         const contenedorProductos = document.getElementById("productos-container");
@@ -309,6 +278,7 @@ nextBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
 
 
 document.getElementById("consulta-form").addEventListener("submit", function (event) {

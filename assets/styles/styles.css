@@ -39,7 +39,7 @@ body {
 }
 
 header {
-    height: 35vh; /* Un 40% de la altura de la pantalla */
+    height: 35vh; 
     margin-bottom: 5%;
 }
 
@@ -101,9 +101,28 @@ button:active {
 }
 
 .imagen-presentacion {
-    position: relative;
+    position: relative !important;
     width: 100%;
     border-radius: 5%;
+}
+
+.whatsapp-btn {
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+    width: 40px; 
+    height: 80px;
+}
+
+.whatsapp-btn img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    box-shadow: none;
+}
+
+.whatsapp-btn img:active {
+    transform: scale(1);
 }
 
 .direccion-presentacion {
@@ -154,7 +173,7 @@ button:active {
 }
 
 .contenedor-imagenes img {
-    flex: 1;         /* Permite que cada imagen crezca para ocupar el espacio disponible */
+    flex: 1; /* Permite que cada imagen crezca para ocupar el espacio disponible */
     object-fit: cover;
     height: auto !important;    /* O el valor que convenga para que tengan la misma altura */
     aspect-ratio: 4 / 3;  /* se ajusta con la proporcion de ancho de la imagen */
@@ -162,16 +181,12 @@ button:active {
 }
 
 .contenedor-imagen {
-    /*position: relative;*/
     width: 100%;
     height: 250px;
     overflow: hidden;
-    /*padding-top: 7%;*/
 }
 
-/* La imagen se posiciona para cubrir todo el contenedor */
 .contenedor-imagen img {
-  /*  position: absolute;*/
     height: 200px;
     top: 0;
     left: 0;
@@ -197,7 +212,7 @@ button:active {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px); /* Aplicar desenfoque */
+    backdrop-filter: blur(10px); /* desenfoque */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,6 +379,14 @@ button:active {
     gap: 6%;
 }
 
+.social-media img {
+    box-shadow: none;
+}
+
+.social-media img:active {
+    transform: scale(1);
+ }
+
 .social-item {
     display: flex;
     flex-direction: column;
@@ -384,20 +407,19 @@ button:active {
 @media screen and (min-width: 1024px) {
     .contenedor-principal {
         max-width: 1400px;
-        padding-left: 18%; /* Ajusta el margen en desktop */
-        padding-right: 18%; /* Ajusta el margen en desktop */
+        padding-left: 18%; 
+        padding-right: 18%; 
         display: flex;
         align-items: flex-start;
         gap: 30px;
     }
 
     header {
-        height: 90vh; /* Un 40% de la altura de la pantalla */
+        height: 100vh; 
     }
 
   .presentacion {
     display: flex;
-    /*align-items: center;*/
     gap: 5%;
     
   }
@@ -409,14 +431,33 @@ button:active {
 
   .presentacion img {
     width: 100%;
-    min-width: 37vh; /* Ajusta según el tamaño deseado */
-    max-height: 100vh; /* Ajusta según el tamaño deseado */
+    min-width: 37vh; 
+    max-height: 100vh; 
     object-fit: cover;
   }
 
     .imagen-presentacion {
         width: 50%;
     }
+
+    .whatsapp-btn {
+        width: 50px !important; 
+        height: 50px !important;
+        bottom: 135px; 
+        right: 10px;
+    }
+
+    .whatsapp-btn img {
+        min-width: unset !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .whatsapp-btn img:hover {
+        transform: scale(1.1);
+    }
+    
+    
 
     .presentacion h3 {
         font-size: 1.8em;
@@ -516,6 +557,14 @@ button:active {
     .social-item a {
         font-size: 1.2em;
     }
+
+    .social-media img:hover {
+        transform: scale(1.1);
+     }
+
+     .social-media img:active {
+        transform: scale(1.2);
+     }
 }
 
 @media screen and (min-width: 768px) { 
