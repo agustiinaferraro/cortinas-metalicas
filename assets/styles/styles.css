@@ -8,6 +8,10 @@ html, body {
     overflow-x: hidden;
 }
 
+element.style {
+    background-image: none;
+}
+
 body {
     background-image: url("../multimedia/fondo-web.svg");
     background-size: cover;
@@ -106,23 +110,22 @@ button:active {
     border-radius: 5%;
 }
 
-.whatsapp-btn {
-    position: absolute;
-    bottom: 100px;
-    right: 10px;
-    width: 40px; 
-    height: 80px;
+.whatsapp-floating {
+    position: fixed;
+    bottom: 1.5%;
+    right: 2%;
+    width: 15%;
 }
 
-.whatsapp-btn img {
+.whatsapp-floating img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease;
     box-shadow: none;
 }
 
-.whatsapp-btn img:active {
-    transform: scale(1);
+
+.whatsapp-floating img:active {
+    transform: scale(1.2);
 }
 
 .direccion-presentacion {
@@ -440,25 +443,21 @@ button:active {
         width: 50%;
     }
 
-    .whatsapp-btn {
-        position: absolute;
-        width: 50px !important; 
-        height: 50px !important;
-        bottom: 155px; 
-        right: 10px;
-    }
-
-    .whatsapp-btn img {
-        min-width: unset !important;
-        width: 100% !important;
-        height: auto !important;
+    .whatsapp-floating {
+        position: fixed;
+        bottom: 5%;
+        right: 2.5%;
+        width: 5%;
     }
     
-    .whatsapp-btn img:hover {
+    .whatsapp-floating img:hover {
         transform: scale(1.1);
     }
     
-    
+    .whatsapp-floating img:active {
+        transform: scale(1.2);
+    }
+       
 
     .presentacion h3 {
         font-size: 1.8em;

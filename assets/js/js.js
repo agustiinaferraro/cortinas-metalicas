@@ -61,10 +61,7 @@
             { url: "https://www.youtube.com/embed/GVnENzx4Mkk" }  //18 (Short corregido)
             // { url: "https://www.youtube.com/embed/U8AQ5shL5c8" } //19 (Si vuelve a estar disponible)
         ];
-        
-          
-        
-          
+           
         const contenedorProductos = document.getElementById("productos-container");
 
         for (let key in productos) {
@@ -278,8 +275,6 @@ nextBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
-
-
 
 document.getElementById("consulta-form").addEventListener("submit", function (event) {
     event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
