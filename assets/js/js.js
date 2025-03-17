@@ -227,9 +227,9 @@ videos.forEach((video) => {
     videoContainer.classList.add("video");
 
     const videoElement = document.createElement("iframe");
-    videoElement.setAttribute("src", video.url);
+    videoElement.setAttribute("src", `${video.url}?modestbranding=1&rel=0&controls=1&disablekb=1&iv_load_policy=3&fs=0&playsinline=1`);
     videoElement.setAttribute("frameborder", "0");
-    videoElement.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+    videoElement.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
     videoElement.setAttribute("allowfullscreen", "");
     videoElement.classList.add("video-element");
 
@@ -245,6 +245,7 @@ videos.forEach((video) => {
 
     contenedorVideos.appendChild(videoContainer);
 });
+
 
 // logica para la reproducción de un solo video
 contenedorVideos.addEventListener("click", (event) => {
