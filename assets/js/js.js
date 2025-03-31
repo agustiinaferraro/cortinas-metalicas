@@ -41,16 +41,16 @@
         };
 
         const videos = [
-            { url: "https://www.youtube.com/embed/4iMqqpwVHJQ" }, //1
-            { url: "https://www.youtube.com/embed/y4FxtryYE1E" }, //2
-            { url: "https://www.youtube.com/embed/Vt0AKNguaMU" }, //3
-            { url: "https://www.youtube.com/embed/cv7gm1AdA-g" }, //4 (Short corregido)
-            { url: "https://www.youtube.com/embed/GSmgFN0Wgv0" }, //5
-            { url: "https://www.youtube.com/embed/_t8gywa7fsQ" }, //6
-            { url: "https://www.youtube.com/embed/HwExpvchyqY" }, //7
-            { url: "https://www.youtube.com/embed/IXiWdpv0tns" }, //8
+            { url: "https://www.youtube.com/embed/2T2c9aM8OzM" }, //1
+            { url: "https://www.youtube.com/embed/yeZspQW630M" }, //2
+            { url: "https://www.youtube.com/embed/gTrh7YtIeKg" }, //3
+            { url: "https://www.youtube.com/embed/Xr_1A614osY" }, //4 (Short corregido)
+            { url: "https://www.youtube.com/embed/zOcs7DezACk" }, //5
+            { url: "https://www.youtube.com/embed/G7Qdgkf7Pgk" }, //6
+            { url: "https://www.youtube.com/embed/ftAe-V845rE" }, //7
+            /* { url: "https://www.youtube.com/embed/IXiWdpv0tns" }, //8
             { url: "https://www.youtube.com/embed/weUgYwFFvUo" }, //9
-           // { url: "https://www.youtube.com/embed/qXPcsk4glE0" }, //10
+            // { url: "https://www.youtube.com/embed/qXPcsk4glE0" }, //10
             { url: "https://www.youtube.com/embed/74THwcPOdK4" }, //11
             { url: "https://www.youtube.com/embed/AWWpk4Kp0z4" }, //12
             { url: "https://www.youtube.com/embed/wW5FJcLG944" }, //13
@@ -58,9 +58,9 @@
             { url: "https://www.youtube.com/embed/lsODo-LigKY" }, //15 (Corregido)
             { url: "https://www.youtube.com/embed/RsqYNoQB9yI" }, //16
             { url: "https://www.youtube.com/embed/FAp-Lkiv2Fg" }, //17
-          // { url: "https://www.youtube.com/embed/GVnENzx4Mkk" }  //18 (Short corregido)
-            // { url: "https://www.youtube.com/embed/U8AQ5shL5c8" } //19 (Si vuelve a estar disponible)
-        ];
+            // { url: "https://www.youtube.com/embed/GVnENzx4Mkk" }  //18 (Short corregido)
+            // { url: "https://www.youtube.com/embed/U8AQ5shL5c8" } //19 (Si vuelve a estar disponible)*/
+        ];        
            
         const contenedorProductos = document.getElementById("productos-container");
 
